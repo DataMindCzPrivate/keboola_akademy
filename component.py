@@ -4,8 +4,8 @@ from pathlib import Path
 
 DATA_FOLDER = Path('/data')
 
-SOURCE_FILE_PATH = DATA_FOLDER.joinpath('in/tables/input.csv')
-RESULT_FILE_PATH = DATA_FOLDER.joinpath('out/tables/output.csv')
+SOURCE_FILE_PATH = DATA_FOLDER.joinpath('/in/tables/input.csv')
+RESULT_FILE_PATH = DATA_FOLDER.joinpath('/out/tables/output.csv')
 
 config = json.load(open(DATA_FOLDER.joinpath('config.json')))
 PARAM_PRINT_LINES = config['parameters']['print_rows']
